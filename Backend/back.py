@@ -270,7 +270,7 @@ def create_index_template():
                 const formData = new FormData();
                 formData.append('file', fileInput.files[0]);
                 
-                fetch('/predict', {
+                fetch('https://lung-detection.onrender.com/predict', {
                     method: 'POST',
                     body: formData
                 })
